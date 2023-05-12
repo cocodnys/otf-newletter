@@ -1,0 +1,457 @@
+@font-face {
+    font-family: 'press_start_2pregular';
+    src: url('../Assets/fontpixel/pressstart2p-regular-webfont.woff2') format('woff2'),
+         url('../Assets/fontpixelpressstart2p-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+body {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    padding:0;
+    margin:0;
+    background-image: url("../Assets/kodak.gif");
+    background-size: cover;
+}
+
+
+
+p{
+    color: white;
+    font-family: "press_start_2pregular";
+    font-size: 15px;
+}
+
+.window{
+    background-color: grey;
+    width: 500px;
+
+
+    position: relative;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    top: 50%;
+    display: flex;
+    flex-direction: column;
+}
+.windowtop{
+    background-color: blue;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.windowtop .closewindow{
+    background-color: grey;
+    width: 40px;
+    height: 40px;
+    margin-right: 5px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.windowtop p{
+    margin-top: 22px;
+    margin-left: 20px;
+}
+
+.windowtop .closewindow p{
+    font-size: 20px;
+    margin-top: 32px;
+    margin-left: 2px;
+}
+
+
+.windowcontent {
+    background-color: grey;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+}
+.windowcontent a:hover {
+    background-color: #757575;
+}
+.windowcontent a:hover p{
+    text-shadow: gray; 4px 2px;
+}
+
+
+
+/* unvisited link */
+a:link {
+    text-decoration: none;
+}
+
+/* visited link */
+a:visited {
+    text-decoration: none;
+}
+
+/* mouse over link */
+a:hover {
+    text-decoration: none;
+}
+
+/* selected link */
+a:active {
+    text-decoration: none;
+}
+
+a{
+    cursor: pointer;
+}
+
+
+.overlay{
+    display: none;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+    position: fixed;
+    background: rgba(0, 0, 0, 0.6);
+}
+
+
+.popupdir{
+    display: none;    
+    margin-top: 150px;
+    margin-left: 70px;
+    z-index: 2;
+    position: fixed;
+    filter: drop-shadow(0 0 15px black);
+}
+.popupclothes{
+    display: none;    
+    margin-top: 200px;
+    margin-left: 180px;
+    z-index: 2;
+    position: fixed;
+    filter: drop-shadow(0 0 15px black);
+}
+
+.popuptop{
+    width: 800px;
+    background-color: blue;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.popuptop .closepopupdir{
+    background-color: grey;
+    width: 40px;
+    height: 40px;
+    margin-right: 5px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.popuptop .closepopupclothes{
+    background-color: grey;
+    width: 40px;
+    height: 40px;
+    margin-right: 5px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.popuptop p{
+    margin-top: 22px;
+    margin-left: 20px;
+}
+
+.popuptop .closepopupdir p{
+    font-size: 20px;
+    margin-top: 32px;
+    margin-left: 2px;
+}
+.popuptop .closepopupclothes p{
+    font-size: 20px;
+    margin-top: 32px;
+    margin-left: 2px;
+}
+
+
+.popupdir .popupcontentdir {
+    background-color: grey;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    height: 430px;
+    width: 800px;
+    overflow-y: scroll;
+
+}
+
+.popupdir .popupcontentdir img{
+    width: 45%;
+    border-color: #43C40C;
+    border-width: 4px;
+    border-style: solid;
+    box-shadow: #226406 4px 4px;
+}
+.popupdir .popupcontentdir p{
+    color: #43C40C;
+    text-shadow: #226406 4px 2px;
+    margin: 20px;
+}
+.lignecontent{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 20px;
+
+
+}
+
+.popupclothes .popupcontentclothes .lignecontent img{
+    width: 30%;
+}
+
+.popupclothes .otfteecontent{
+    background-color: grey;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    overflow-y: scroll;
+    height: 400px;
+    width: 800px;
+    display: none;
+    text-align: center;
+}
+
+.popupclothes .basquiatteecontent{
+    background-color: grey;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    overflow-y: scroll;
+    height: 400px;
+    width: 800px;
+    display: none;
+    text-align: center;
+}
+.popupclothes .basquiatteecontent img {
+    width: 50%;
+}
+.popupclothes .basquiatteecontent .lignecontent a{
+    width: 250px;
+}
+
+
+.popupclothes .ladyteecontent{
+    background-color: grey;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    overflow-y: scroll;
+    height: 400px;
+    width: 800px;
+    display: none;
+    text-align: center;
+}
+.popupclothes .ladyteecontent img {
+    width: 50%;
+}
+.popupclothes .ladyteecontent .lignecontent a{
+}
+
+
+
+.popupclothes .smokingteecontent{
+    background-color: grey;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    overflow-y: scroll;
+    height: 400px;
+    width: 800px;
+    display: none;
+    text-align: center;
+}
+.popupclothes .smokingteecontent img {
+    width: 50%;
+}
+.popupclothes .smokingteecontent .lignecontent a{
+}
+
+
+
+.popupclothes .totecontent{
+    background-color: grey;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    overflow-y: scroll;
+    height: 400px;
+    width: 800px;
+    display: none;
+    text-align: center;
+}
+.popupclothes .totecontent img {
+    width: 25%;
+}
+.popupclothes .totecontent .lignecontent a{
+    width: 250px;
+    margin-right: 50px;
+    margin-left: -20px;
+}
+
+
+
+
+
+.popupclothes #popupcontentclothes a:link {
+    text-decoration: none;
+}
+
+/* visited link */
+.popupclothes #popupcontentclothes a:visited {
+    text-decoration: none;
+}
+
+/* mouse over link */
+.popupclothes .popupcontentclothes .lignecontent:hover {
+    background-color: #757575;
+}
+
+/* selected link */
+.popupclothes #popupcontentclothes a:active {
+    text-decoration: none;
+}
+
+.popupclothes #popupcontentclothes a{
+    cursor: pointer;
+}
+
+
+
+
+.popupclothes .popupcontentclothes {
+    background-color: grey;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 400px;
+    width: 800px;
+    overflow-y: scroll;
+}
+
+.popupclothes .otfteecontent img {
+    width: 50%;
+}
+
+
+
+.popupdir .popupcontentdir a:link {
+    text-decoration: none;
+}
+
+/* visited link */
+.popupdir .popupcontentdir a:visited {
+    text-decoration: none;
+}
+
+/* mouse over link */
+.popupdir .popupcontentdir a:hover {
+    background-color: #757575;
+}
+.popupdir .popupcontentdir a:hover p{
+    color: #E7F200;
+    text-shadow: #656A01 4px 2px;
+}
+.popupdir .popupcontentdir a:hover img{
+
+    border-color: #E7F200;
+    border-width: 4px;
+    border-style: solid;
+    box-shadow: #656A01 4px 4px;
+}
+
+/* selected link */
+.popupdir .popupcontentdir a:active {
+    background-color: grey;
+
+}
+
+.popupdir .popupcontentdir a{
+    cursor: pointer;
+}
+
+
+
+
+
+.popupsocial{
+    display: none;    
+    margin-top: 380px;
+    margin-left: 440px;
+    z-index: 2;
+    position: fixed;
+    filter: drop-shadow(0 0 15px black);
+}
+.popuptopsocial .closepopupsocial{
+    background-color: grey;
+    width: 40px;
+    height: 40px;
+    margin-right: 5px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.popuptopsocial .closepopupsocial p{
+    font-size: 20px;
+    margin-top: 32px;
+    margin-left: 2px;
+}
+.popupsocial .popupcontentsocial {
+    background-color: grey;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    height: 130px;
+    width: 400px;
+    overflow-y: scroll;
+}
+.popupsocial .popupcontentsocial img{
+    height: 90px;
+    border-radius: 17px;
+}
+.popuptopsocial{
+    width: 400px;
+    background-color: blue;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.popuptopsocial p {
+    margin-top: 22px;
+    margin-left: 20px;
+}
+.lignecontentsocial{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 20px;
+
+
+}
+
+
+.copy{
+    visibility: hidden;
+    pointer-events:none;
+}

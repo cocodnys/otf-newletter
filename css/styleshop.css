@@ -1,0 +1,105 @@
+@font-face {
+    font-family: 'press_start_2pregular';
+    src: url('../Assets/fontpixel/pressstart2p-regular-webfont.woff2') format('woff2'),
+         url('../Assets/fontpixelpressstart2p-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+body {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    padding:0;
+    margin:0;
+    background-image: url("../Assets/glitch2.gif");
+    background-size: cover;
+}
+.content{
+    background-color: rgba(0,0,0,0.4);
+    width : 100%;
+    min-height: 100%;
+}
+
+
+p{
+    color: white;
+    font-family: "press_start_2pregular";
+    font-size: 15px;
+}
+
+.window{
+    background-color: grey;
+    width: 500px;
+
+
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    top: 50%;
+    display: flex;
+    flex-direction: column;
+}
+.windowtop{
+    background-color: blue;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.windowtop .closewindow{
+    background-color: grey;
+    width: 40px;
+    height: 40px;
+    margin-right: 5px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.windowtop p{
+    margin-top: 22px;
+    margin-left: 20px;
+}
+
+.windowtop .closewindow p{
+    font-size: 20px;
+    margin-top: 32px;
+    margin-left: 2px;
+}
+
+
+.windowcontent {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: grey
+}
+
+/* unvisited link */
+a:link {
+    text-decoration: none;
+}
+
+/* visited link */
+a:visited {
+    text-decoration: none;
+}
+
+/* mouse over link */
+a:hover {
+    text-decoration: none;
+}
+
+/* selected link */
+a:active {
+    text-decoration: none;
+}
+
+.copy{
+    visibility: hidden;
+    pointer-events:none;
+}

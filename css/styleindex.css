@@ -1,0 +1,313 @@
+@font-face {
+    font-family: 'press_start_2pregular';
+    src: url('../Assets/fontpixel/pressstart2p-regular-webfont.woff2') format('woff2'),
+         url('../Assets/fontpixelpressstart2p-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+body {
+	height: 100%;
+	width: 100%;
+	position: absolute;
+    padding:0;
+    margin:0;
+	background-image: url("../Assets/lafeve.gif");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center, center;
+	background-attachment: fixed;
+}
+.content{
+	background-color: rgba(0,0,0,0.4);
+	width : 100%;
+	height: 100%;
+}
+
+.content #logo{
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.menu{
+	position: relative;
+	margin: auto;
+	margin-top: 120px;
+	display: flex;
+	flex-direction: row;
+	width: 50%;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.menu .media{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	height: 150px;
+}
+
+.menu .shop{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 60px;
+	height: 150px;
+}
+
+.menu .about{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	height: 150px;
+}
+
+.menu .contact{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	height: 150px;
+}
+
+.menu .shop p{
+	margin-top: auto;
+}
+.menu .media p{
+	margin-top: auto;
+}
+.menu .about p{
+	margin-top: auto;
+}
+.menu .contact p{
+	margin-top: auto;
+}
+.menu .shop img{
+	margin-top: -14px;
+}
+
+
+
+.menu #media{
+	height: 80px;
+}
+.menu #fuck{
+	height: 120px;
+}
+.menu #cube{
+	height: 100px;
+}
+.menu #console{
+	height: 100px;
+}
+
+
+
+footer{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	left: 50%;
+	transform: translate(-50%);
+	position: fixed;
+	bottom: 0;
+	width: 70%;
+	margin-bottom: -12px;
+}
+
+
+
+
+
+/* unvisited link */
+a:link {
+	text-decoration: none;
+}
+
+/* visited link */
+a:visited {
+	text-decoration: none;
+}
+
+/* mouse over link */
+a:hover {
+	text-decoration: none;
+}
+
+/* selected link */
+a:active {
+	text-decoration: none;
+}
+
+
+p{
+	color: white;
+	font-family: "press_start_2pregular";
+	font-size: 15px;
+}
+
+footer p{
+	font-family: "press_start_2pregular";
+	font-size: 15px;
+}
+
+/* unvisited link */
+footer  a:link {
+	color: white;
+	text-decoration: none;
+	font-family: "press_start_2pregular";
+
+}
+
+/* visited link */
+footer a:visited {
+	color: white;
+	text-decoration: none;
+	font-family: "press_start_2pregular";
+}
+
+/* mouse over link */
+footer a:hover {
+	color: white;
+	text-decoration: none;
+	font-family: "press_start_2pregular";
+}
+
+/* selected link */
+footer a:active {
+	
+	font-family: "press_start_2pregular";
+	background-color: white;
+	color: none;
+}
+
+
+@media screen and (max-width: 414px){
+
+body {
+	height: 100%;
+	width: 100%;
+	position: absolute;
+    padding:0;
+    margin:0;
+	background-image: url("../Assets/lafeve.gif");
+	background-size: cover;
+}
+
+.content #logo{
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%;
+}
+.menu{
+	margin-top: 70px;
+	display: flex;
+	flex-direction: row;
+	width: 50%;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.menu #media{
+	height: 60px;
+}
+.menu #fuck{
+	height: 100px;
+}
+.menu #cube{
+	height: 80px;
+}
+.menu #console{
+	height: 80px;
+}
+
+footer{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	left: 50%;
+	transform: translate(-50%);
+	position: fixed;
+	bottom: 0;
+	width: 70%;
+	margin-bottom: 5px;
+}
+
+footer p{
+	font-family: "press_start_2pregular";
+	font-size: 10px;
+	margin: 0;
+}
+
+
+
+@media screen and (max-width: 375px){
+
+body {
+	height: 100%;
+	width: 100%;
+	position: absolute;
+    padding:0;
+    margin:0;
+	background-image: url("../Assets/lafeve.gif");
+	background-size: cover;
+}
+
+.content #logo{
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%;
+}
+.menu{
+	margin-top: 70px;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	width: 60%;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.menu #media{
+	height: 80px;
+
+}
+.menu #fuck{
+	height: 120px;
+}
+.menu #cube{
+	height: 100px;
+}
+.menu #console{
+	height: 100px;
+}
+
+footer{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	left: 50%;
+	transform: translate(-50%);
+	position: fixed;
+	bottom: 0;
+	width: 70%;
+	margin-bottom: 5px;
+}
+
+footer p{
+	font-family: "press_start_2pregular";
+	font-size: 10px;
+	margin: 0;
+}
+
+
+
+
+
